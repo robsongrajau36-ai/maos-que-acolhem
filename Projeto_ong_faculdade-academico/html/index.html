@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mãos que Acolhem — projeto acadêmico de solidariedade e apoio à comunidade.">
+  <title>Mãos que Acolhem | Início</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo" aria-label="Mãos que Acolhem - página inicial">
+      <img src="../imagens/logo-maos-que-acolhem.png" alt="Logo da ONG Mãos que Acolhem">
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <button class="menu-toggle" type="button" aria-label="Abrir menu"
+              aria-expanded="false" aria-controls="menu-principal">☰</button>
+
+      <ul id="menu-principal" class="menu-list">
+        <li><a href="index.html">Início</a></li>
+
+        <li class="dropdown">
+          <button class="dropdown-toggle" type="button"
+                  aria-expanded="false" aria-controls="submenu-projetos">
+            Projetos ▾
+          </button>
+          <ul id="submenu-projetos" class="dropdown-menu">
+            <li><a href="projetos.html">Conheça nossos projetos</a></li>
+            <li><a href="cadastro.html">Seja voluntário</a></li>
+          </ul>
+        </li>
+
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titulo-principal">
+      <h1 id="titulo-principal">Mãos que Acolhem</h1>
+      <p>Solidariedade, acolhimento e participação para transformar vidas.</p>
+      <a class="button" href="projetos.html">Conheça nossos projetos</a>
+    </section>
+
+    <section class="content-section" aria-labelledby="sobre">
+      <h2 id="sobre">Sobre o projeto</h2>
+      <p>
+        A Mãos que Acolhem é uma proposta de ONG universitária criada para
+        incentivar ações solidárias, voluntariado e apoio à comunidade.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🎯</div>
+          <h3>Missão</h3>
+          <p>Promover ações de solidariedade e acolhimento para pessoas que precisam de apoio.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🌱</div>
+          <h3>Visão</h3>
+          <p>Fortalecer a participação comunitária e incentivar uma sociedade mais colaborativa.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">💚</div>
+          <h3>Valores</h3>
+          <p>Respeito, empatia, responsabilidade, inclusão e solidariedade.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="frentes">
+      <h2 id="frentes">Nossas frentes de ação</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">📦</div>
+          <h3>Arrecadação e logística</h3>
+          <p>Organização e distribuição de alimentos, roupas e materiais essenciais.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">📚</div>
+          <h3>Capacitação e oficinas</h3>
+          <p>Atividades educativas e oficinas para compartilhar conhecimentos.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🤝</div>
+          <h3>Acolhimento humano</h3>
+          <p>Ações de escuta, orientação e apoio à comunidade.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="feedback-section content-section" aria-labelledby="feedback">
+      <h2 id="feedback">Componentes de feedback</h2>
+      <p>Exemplos de retorno visual após ações realizadas pelo usuário.</p>
+
+      <div class="feedback-grid">
+        <article class="feedback-card">
+          <h3>1. Badges + Alertas</h3>
+          <div class="badge-list" aria-label="Status das ações">
+            <span class="badge badge-sucesso">✓ Ativo</span>
+            <span class="badge badge-info">ℹ Informação</span>
+            <span class="badge badge-alerta">⚠ Atenção</span>
+          </div>
+          <div class="feedback-alert" role="alert">
+            <strong>Atenção:</strong> confira os dados antes de enviar seu cadastro.
+          </div>
+        </article>
+
+        <article class="feedback-card">
+          <h3>2. Toast aberto</h3>
+          <p>Mensagem rápida e não obstrutiva apresentada após uma ação.</p>
+          <button type="button" id="abrir-toast">Abrir Toast</button>
+        </article>
+
+        <article class="feedback-card">
+          <h3>3. Modal aberto</h3>
+          <p>Janela de destaque usada para apresentar uma informação complementar.</p>
+          <button type="button" id="abrir-modal">Abrir Modal</button>
+        </article>
+
+        <article class="feedback-card feedback-responsive">
+          <h3>4. Versão responsiva/mobile</h3>
+          <p>Os componentes se reorganizam para telas menores, mantendo leitura, contraste e área adequada para toque.</p>
+          <span class="badge badge-mobile">📱 Mobile</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="call-to-action" aria-labelledby="participe">
+      <h2 id="participe">Quer fazer parte?</h2>
+      <p>Conheça os projetos ou preencha o cadastro para demonstrar seu interesse.</p>
+      <a class="button" href="cadastro.html">Quero participar</a>
+    </section>
+  </main>
+
+  <div class="toast-feedback" id="toast-feedback" role="status" aria-live="polite">Cadastro pronto para ser enviado.</div>
+
+  <div class="modal-backdrop" id="modal-feedback" aria-hidden="true">
+    <div class="modal-feedback" role="dialog" aria-modal="true" aria-labelledby="modal-feedback-titulo">
+      <div class="modal-feedback-header">
+        <h2 id="modal-feedback-titulo">Modal aberto</h2>
+        <button type="button" id="fechar-modal" class="modal-close" aria-label="Fechar modal">×</button>
+      </div>
+      <p>Este é um exemplo de componente de feedback em formato de modal.</p>
+      <button type="button" id="fechar-modal-final">Entendi</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2026 Mãos que Acolhem. Projeto acadêmico de desenvolvimento web.</p>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
